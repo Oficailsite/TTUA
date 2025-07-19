@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+    
+}
+.link {
+    text-decoration: none;
+}
+.container {
+    position: relative;
+    width: 80vw;
+    max-width: 1000px;
+}
+.background {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.text {
+    position: absolute;
+    top: 43%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3vw;
+    color: white;
+    font-family: "Pangolin", serif;
+    
+    font-style: italic;
+    font-weight: 800;
+    text-align: center;
+    white-space: nowrap;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+.block {
+    /* display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; */
+    width: 80vw;
+    height: 20vw;
+    max-width: 1000px;
+    padding: 2vw;
+    border-radius: 50px;
+    border: 0.4vw solid rgba(217, 18, 213, 0.8);
+    background: transparent;
+    box-shadow: 0 0 1.5vw rgba(106, 17, 203, 0.8), 0 0 3vw rgba(37, 117, 252, 0.8);
+    margin-top: 2vw;
+    /* text-align: center;
+    position: relative; */
+    display: flex;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+.block img.arrow {
+    width: 16vw;
+    height: auto;
+    margin-right: 2vw;
+    animation: arrow-move 1s infinite ease-in-out;
+}
+@keyframes arrow-move {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(15px); }
+    100% { transform: translateX(0); }
+}
+.block-content {
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.block img.logo {
+    max-width: 40vw;
+    height: 6vw;
+    margin-bottom: 1vw;
+}
+.block p {
+    font-size: 4.5vw;
+    color: white;
+    word-wrap: break-word;
+    text-align: center;
+    max-width: 80%;
+}
+.tfgLinkStyle {
+    font-size: 2vw;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.6);
+    font-family: "Pangolin", serif;
+    font-style: italic;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+}
+@media (min-width: 1440px) {
+    .block {
+        height: 15vw;
+        border-radius: 200px;
+        max-width: 1100px;
+    }
+    .block img.arrow {
+        width: 11vw;
+    }
+    .block p{
+        font-size: 3.5vw;
+        max-width: fit-content;
+    }
+    
+    .background {
+        height: 120%;
+    }
+    .text {
+        top: 50%;
+        font-size: 4vw;
+    }
+}
+@media (max-width: 1440px) {
+    .block {
+        height: 15vw;
+        border-radius: 200px;
+        max-width: 1100px;
+        width: 60vw;
+    }
+    .block img.arrow {
+        width: 11vw;
+    }
+    .block p{
+        font-size: 3.5vw;
+        max-width: fit-content;
+    }
+    
+    .background {
+        height: 120%;
+    }
+    .text {
+        top: 50%;
+        font-size: 5vw;
+    }
+}
+@media (max-width: 991px) {
+    .block {
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+}
+/* @media (min-width: 600px){
+    .block {
+        height: 15vw;
+        border-radius: 200px;
+        max-width: 1100px;
+        width: 60vw;
+    }
+    .block img.arrow {
+        width: 11vw;
+    }
+    .block p{
+        font-size: 3.5vw;
+    }
+    
+    .background {
+        height: 120%;
+    }
+    .text {
+        top: 50%;
+        font-size: 5vw;
+    }
+} */
+/* @media (max-width: 1440px){
+    .text {
+        font-size: 4vw;
+    }
+} */
+@media (max-width: 600px) {
+    .container {
+        width: 90vw;
+    }
+    .text {
+        /* font-size: 7vw; */
+        font-size: 6vw;
+    }
+    .block {
+        width: 75vw;
+        height: 20vw;
+        margin-bottom: 0px;
+    }
+    .block img.logo {
+        height: 10vw;
+    }
+    .block img.arrow {
+        width: 17vw;
+    }
+    .block p {
+        font-size: 4.5vw;
+    }
+    .tfgLinkStyle {
+        font-size: 4vw;
+    }
+    .block img.logo.vegas {
+        height: 7vw;
+        margin-bottom: 3vw;
+    }
+}
+
+.arrowPlacement {
+    max-width: 20%;
+}
+.bonusText {
+    font-family: "Pangolin", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+.tfgLink {
+    padding: 50px;
+}
